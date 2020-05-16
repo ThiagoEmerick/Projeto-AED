@@ -42,5 +42,67 @@ class MainClass {
           sair = 0;
           break;
         }
-  }
-}
+       }
+      }
+
+
+
+     //FUNÇAO TRATAR ENTRADA INICIAL(0,1,3) 
+    public static bool digitosCertos(string entrada){
+     char primeiroCaracter = entrada[0];
+     int codigoAscii = Convert.ToInt32(primeiroCaracter );
+     if(codigoAscii < 48 || codigoAscii > 51 || entrada.Length > 1){
+       Console.WriteLine("Opção inválida");
+       Console.WriteLine("Digite uma opção correta ou 0 prar sair");
+       System.Threading.Thread.Sleep(TimeSpan.FromSeconds(4));
+      Console.Clear();
+       return false;
+     }
+    
+     return true;  
+     }
+   //FUNÇAO TRATAR ENTRADA NUMERO 0,1,2.
+   public static bool digitosCertosUmDois(string entrada){
+     char primeiroCaracter = entrada[0];
+     int codigoAscii = Convert.ToInt32(primeiroCaracter );
+     if(codigoAscii == 48){
+       return true; 
+     }
+     if(codigoAscii > 48 || codigoAscii <  52 || entrada.Length > 1){
+       Console.WriteLine("Opção inválida");
+       Console.WriteLine("Digite uma opção correta ou 0 prar sair");
+       System.Threading.Thread.Sleep(TimeSpan.FromSeconds(3));
+       return false;   
+     }
+     return true;  
+   }
+  //FUNÇAO TRATAR ENTRADA NUMERO 1 E 0
+   public static bool digitosCertosZeroUm(string entrada){
+     char primeiroCaracter = entrada[0];
+     int codigoAscii = Convert.ToInt32(primeiroCaracter );
+     if(codigoAscii > 47 || codigoAscii < 51 || entrada.Length > 1){
+       Console.WriteLine("Opção inválida");
+       Console.WriteLine("Digite uma opção correta ou 0 prar sair");
+       System.Threading.Thread.Sleep(TimeSpan.FromSeconds(2));
+       return false;
+       
+     }
+     return true;  
+   }
+  
+   //FUNÇAO TRATAR ENTRADA NUMERO CADASTRO
+   public static bool digitosCertosNumeroQualquer(string entrada){
+     char primeiroCaracter = entrada[0];
+     int codigoAscii = Convert.ToInt32(primeiroCaracter );
+     if(codigoAscii < 47 || codigoAscii > 57 || entrada.Length > 1){
+       Console.WriteLine("Opção inválida");
+       Console.WriteLine("Digite uma opção correta ou 0 prar sair");
+       System.Threading.Thread.Sleep(TimeSpan.FromSeconds(3));
+       return false;  
+     }
+     return true;  
+    } 
+       
+  } 
+   
+  
