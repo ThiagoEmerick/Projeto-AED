@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using System.Text;
 
-class Usuario_Cliente : Usuario{
+class Usuario_Cliente : Usuario {
   private string cnpj;
   private string nomeFantasia;
 
@@ -57,5 +57,5 @@ class Usuario_Cliente : Usuario{
     infoBasic.Close();
     leiturArqCliente.Close();
     return i;
-  } 
+  }
 }

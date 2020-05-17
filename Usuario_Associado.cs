@@ -23,7 +23,7 @@ class Usuario_Associado : Usuario {
   {
    cpf = parametroCpf;
    tipoProdutoVinculado = parametroTipoProdutoVinculado;
-  }
+  } 
   
   /*metodo de cadastra associado*/
   
@@ -59,7 +59,7 @@ class Usuario_Associado : Usuario {
     leiturArqAssociado.Close();
     return i;
   }
-/*
+
    public bool  VerificarCadastro(string cpf){
     
     AtualizarLista();
@@ -73,5 +73,6 @@ class Usuario_Associado : Usuario {
     } 
 
     return true;
-*/
+
   }
+}
